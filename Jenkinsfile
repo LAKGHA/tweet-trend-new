@@ -93,7 +93,7 @@ stage(" Docker Build ") {
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
-                docker.withRegistry(registry, 'artfiact-cred'){
+                docker.withRegistry(registry, 'Artifactory-Jenkins'){
                     app.push()
                 }    
                echo '<--------------- Docker Publish Ended --------------->'  
