@@ -38,7 +38,6 @@ environment {
     }
     }
     }
-
   stage("Quality Gate"){
     steps {
         script {
